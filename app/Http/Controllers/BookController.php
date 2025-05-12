@@ -22,7 +22,7 @@ class BookController extends Controller
     
     public function show(Book $book)
     {
-        // Charge les reviews avec les utilisateurs associés
+        
         $book->load(['reviews.user']);
         $users = User::all();
         
