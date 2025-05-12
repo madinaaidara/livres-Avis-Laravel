@@ -11,7 +11,7 @@ class BookController extends Controller
 {
     public function index()
     {
-        // Charge les livres avec leurs reviews pour éviter le N+1 problem
+        
         $books = Book::withCount('reviews')
                     ->withAvg('reviews', 'rating')
                     ->latest()
