@@ -69,7 +69,7 @@
             </div>
         </div>
         
-        <!-- Bonus: Modal de modification -->
+       
         <div class="modal fade" id="editReviewModal{{ $review->id }}" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

@@ -16,7 +16,7 @@ class Book extends Model
         return $this->hasMany(Review::class);
     }
     
-    // Bonus: Calcul de la note moyenne
+    
     public function getAverageRatingAttribute(): float
     {
         return $this->reviews()->avg('rating') ?? 0;

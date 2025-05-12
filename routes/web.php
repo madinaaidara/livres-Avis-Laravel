@@ -20,7 +20,7 @@ Route::post('/books/{book}/reviews', 'store')->name('books.reviews.store');
     Route::delete('/reviews/{review}', 'destroy')->name('reviews.destroy');
 });
 
-// Page 404 personnalisée (bonus)
+
 Route::fallback(function () {
     return view('errors.404');
 });
